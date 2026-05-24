@@ -1,8 +1,9 @@
-st.write(list(st.secrets.keys()))
 import streamlit as st
 from groq import Groq
 from tavily import TavilyClient
 import json
+
+st.write(list(st.secrets.keys()))
 
 client = Groq(api_key=st.secrets["GROQ_API_KEY"])
 tavily = TavilyClient(api_key=st.secrets["TAVILY_API_KEY"])
