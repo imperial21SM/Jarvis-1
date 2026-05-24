@@ -1,3 +1,4 @@
+st.write(list(st.secrets.keys()))
 import streamlit as st
 from groq import Groq
 from tavily import TavilyClient
